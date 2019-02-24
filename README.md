@@ -63,4 +63,4 @@ Meanwhile, I think from user friendly perspective, I can image that you wish tha
 
 In any browser of firefox, chrome or IE, you can find your Internet Option/Network Settings. Take firefox for example, open Options in menu, then in "about:preferences", scroll to bottom, you can see "Network Settings"
 
-![](https://raw.githubusercontent.com/alexmao86/webcam-capture/master/webcam-capture-drivers/driver-raspistill/src/etc/resources/snapshot.png)
+![](https://raw.githubusercontent.com/alexmao86/sock5-client-windows/master/firefox-settings-snapshot.jpg)
