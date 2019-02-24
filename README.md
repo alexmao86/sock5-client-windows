@@ -53,9 +53,9 @@ Meanwhile, I think from user friendly perspective, I can image that you wish tha
 
 2. change autoconfig.pac following your requirement.
 
-3. double click sockVPN.bat, it will lauch http server and then open ssh sock client.
+3. double click sockVPN.bat, it will lauch http server and then open ssh sock client. it will ask you for password.
 
-4. if your default browser is open and showing VPN started, and you can find system tray. then you are success. 
+4. if your default browser is open and showing VPN started, and you can find system tray. then you are success.  JUST KEEP CMD window running!
 
 5. you can change your http server from pac.exe's GUI.
 
@@ -64,3 +64,14 @@ Meanwhile, I think from user friendly perspective, I can image that you wish tha
 In any browser of firefox, chrome or IE, you can find your Internet Option/Network Settings. Take firefox for example, open Options in menu, then in "about:preferences", scroll to bottom, you can see "Network Settings"
 
 ![](https://raw.githubusercontent.com/alexmao86/sock5-client-windows/master/firefox-settings-snapshot.jpg)
+
+you can find sock5 proxy settigns in any other software supports sock5 proxy. 
+
+## sock5-client-windows
+sock5 client windows 是一个清凉的sock5 windows客户端。如果你在有限制的网络里，入了是安全限制或者你想统计网络使用。典型的使用场景是在大陆访问谷歌，那么有一种方式是通过你在其他国家的虚拟云服务器架设一个代理服务器。因为所有的linux VPS服务器都已经集成了SSH服务器并且默认是运行的，所以，你在服务器上根本不需要再安装任何软件即可使用代理服务。从客户端，最简单的方法是敲一个ssh命令创建一个sock5客户端即可：
+
+```shell
+ssh -D 1337 -q -C -N user@yoursite.com
+```
+同时，我从用户友好的角度设想，我可以想象你期望的网络是只有受限的网址需要通过代理访问，其他普通网络则按正常的方式访问，这样不影响速度。所以，这个小客户端集成了一个微型的http服务器作为一个PAC服务器，你可以自己编写一个pac文件实现自动化配置代理。https://baike.baidu.com/item/PAC/16292100
+
