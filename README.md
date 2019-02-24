@@ -1,6 +1,6 @@
 # sock5-client-windows
 
-sock5 client windows is one compact sock5 client for windows. if you are in limited network for reason of security or client statistics. Typical usage such as visiteingGooge from China, then there is one option that setup one proxh server then you can proxy to Google from one linux VPS out of mainland. Because there is SSH server integrated and running on all linux VPS, so from client, the most simple way to setup sock5 client is type one command:
+sock5 client windows is one compact sock5 client for windows. if you are in limited network for reason of security or client statistics. Typical usage such as visiteing Googe from China, then there is one option that setup one proxh server then you can proxy to Google from one linux VPS out of mainland. Because there is SSH server integrated and running on all linux VPS, so from client, the most simple way to setup sock5 client is type one command:
 
 ```shell
 ssh -D 1337 -q -C -N user@yoursite.com
@@ -27,7 +27,7 @@ In any browser of firefox, chrome or IE, you can find your Internet Option/Netwo
 default http port is 8000, default ssh sock port is 1337. you can find sock5 proxy settings in any other software supports sock5 proxy. 
 
 ## sock5-client-windows
-sock5 client windows 是一个清凉的sock5 windows客户端。如果你在有限制的网络里，入了是安全限制或者你想统计网络使用。典型的使用场景是在大陆访问谷歌，那么有一种方式是通过你在其他国家的虚拟云服务器架设一个代理服务器。因为所有的linux VPS服务器都已经集成了SSH服务器并且默认是运行的，所以，你在服务器上根本不需要再安装任何软件即可使用代理服务。从客户端，最简单的方法是敲一个ssh命令创建一个sock5客户端即可：
+sock5 client windows 是一个轻量级的sock5 windows客户端。如果你在有限制的网络里，无论是安全限制或者你想统计网络使用。典型的使用场景是在大陆访问谷歌，那么有一种方式是通过你在其他国家的虚拟云服务器架设一个代理服务器。因为所有的linux VPS服务器都已经集成了SSH服务器并且默认是运行的，所以，你在服务器上根本不需要再安装任何软件即可使用代理服务。从客户端，最简单的方法是敲一个ssh命令创建一个sock5客户端即可：
 
 ```shell
 ssh -D 1337 -q -C -N user@yoursite.com
