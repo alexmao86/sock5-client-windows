@@ -1,22 +1,22 @@
 # sock5-client-windows
 
-sock5 client windows is one compact sock5 client for windows. if you are in limited network for reason of security or client statistics. Typical usage such as visiteing Googe from China, then there is one option that setup one proxh server then you can proxy to Google from one linux VPS out of mainland. Because there is SSH server integrated and running on all linux VPS, so from client, the most simple way to setup sock5 client is type one command:
+sock5 client windows is one compact sock5 client for windows. if you are in limited network for reason of security or client statistics. Typical usage such as visiting Googe from China, then there is one option that setup one proxy server then you can proxy to Google from one linux VPS out of mainland. Because there is SSH server integrated and running on all linux VPS, so from client, the most simple way to setup sock5 client is type below command:
 
 ```shell
 ssh -D 1337 -q -C -N user@yoursite.com
 ```
 
-Meanwhile, I think from user friendly perspective, I can image that you wish that ONLY unaccessible website go though sock5 proxy server, and others go normal network routing. so this small client integrated one tiny http server(pac.exe) play as autoconf PAC server, then you can program one PAC file for proxy auto conf. see https://en.wikipedia.org/wiki/Proxy_auto-config.
+Meanwhile, I think from user friendly perspective, I can image that you wish that ONLY unaccessible websites go though sock5 proxy server, and others go normal network routing. so this small client integrated one tiny http server play as autoconf PAC server, then you can program one PAC file for proxy auto conf. see https://en.wikipedia.org/wiki/Proxy_auto-config.
 
 ## How To Use
 
-1. edit sockVPN.bat, change your ssh server info, user@yoursite.com, see above help text for detail.
+1. edit sockVPN.bat, change your ssh server info, user@yoursite.com, see help text for detail.
 
 2. change autoconfig.pac following your requirement.
 
 3. double click sockVPN.bat, it will lauch http server and then open ssh sock client. it will ask you to accept RAS footprint, type 'yes', then input password.
 
-4. if your default browser is open and showing VPN started, and you can find system tray. then you are success.  JUST KEEP CMD window running!
+4. JUST KEEP CMD window running!
 
  ## Setup browser  
 
@@ -24,7 +24,7 @@ In any browser of firefox, chrome or IE, you can find your Internet Option/Netwo
 
 ![](https://raw.githubusercontent.com/alexmao86/sock5-client-windows/master/firefox-settings-snapshot.jpg)
 
-default http port is 8000, default ssh sock port is 1337. you can find sock5 proxy settings in any other software supports sock5 proxy. 
+http port is 8000 fixed, default ssh sock port is 1337. you can find sock5 proxy settings in any other software supports sock5 proxy. 
 
 ## sock5-client-windows
 sock5 client windows 是一个轻量级的sock5 windows客户端。如果你在有限制的网络里，无论是安全限制或者你想统计网络使用。典型的使用场景是在大陆访问谷歌，那么有一种方式是通过你在其他国家的虚拟云服务器架设一个代理服务器。因为所有的linux VPS服务器都已经集成了SSH服务器并且默认是运行的，所以，你在服务器上根本不需要再安装任何软件即可使用代理服务。从客户端，最简单的方法是敲一个ssh命令创建一个sock5客户端即可：
@@ -32,7 +32,7 @@ sock5 client windows 是一个轻量级的sock5 windows客户端。如果你在�
 ```shell
 ssh -D 1337 -q -C -N user@yoursite.com
 ```
-同时，从用户友好的角度设想，我可以想象你期望的网络是只有受限的网址需要通过代理访问，其他普通网络则按正常的方式访问，这样不影响速度。所以，这个小客户端集成了一个微型的http服务器作为一个PAC服务器，你可以自己编写一个pac文件实现自动化配置代理。https://baike.baidu.com/item/PAC/16292100
+同时，从用户友好的角度，我可以想象你期望的网络是只有受限的网址需要通过代理访问，其他普通网络则按正常的方式访问，这样不影响速度。所以，这个小客户端集成了一个微型的http服务器作为一个PAC服务器，你可以自己编写一个pac文件实现自动化配置代理。https://baike.baidu.com/item/PAC/16292100
 ## 使用方法
 
 1. 编辑sockVPN.bat, 修改你的ssh服务器信息，一般只需要修改服务器地址。
